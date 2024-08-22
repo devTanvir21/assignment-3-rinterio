@@ -39,28 +39,11 @@
 
 <body>
     <header class="bg-base-200">
-        <div class="max-w-[1140px] mx-auto">
+        <div class="max-w-[1140px] px-5 mx-auto pt-8">
             <!-- NavBar -->
             <nav>
-                <div class="navbar justify-between">
+                <div class="navbar justify-between mb-6 md:mb-0">
                     <div>
-                        <div class="dropdown">
-                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h8m-8 6h16" />
-                                </svg>
-                            </div>
-                            <ul tabindex="0"
-                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                                <li><a>Home</a></li>
-                                <li><a>Services</a></li>
-                                <li><a>Portfolio</a></li>
-                                <li><a>Blogs</a></li>
-                                <li><a>Contact Us</a></li>
-                            </ul>
-                        </div>
                         <div class="flex items-center">
                             <i
                                 class="fa-solid fa-arrow-right-long rotate-[-45deg] rounded-full bg-interio-primary mr-2 p-2"></i>
@@ -76,11 +59,24 @@
                             <li><a>Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="">
+                    <div class="hidden md:block">
                         <i class="fa-solid text-lg py-1 px-2 mr-2 bg-white rounded-full fa-magnifying-glass"></i>
                         <i class="fa-solid text-lg py-1 px-2 mr-2 bg-white rounded-full fa-cart-shopping"></i>
                         <a class="btn bg-interio-primary text-xl font-extrabold rounded-full px-4 py-1">Book Consult <i
                                 class="fa-solid fa-arrow-right-long rotate-[-45deg] rounded-full bg-black text-white ml-2 p-2"></i></a>
+                    </div>
+                    <div class="dropdown relative">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars text-xl px-[14px] py-2 rounded-full bg-white"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute top-[40px] left-[-200px]">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -113,7 +109,7 @@
     <main>
         <!-- About Section -->
         <div class="bg-base-300 py-28">
-            <div class="max-w-[1140px] mx-auto relative">
+            <div class="max-w-[1140px] px-5 mx-auto relative">
                 <div class=" absolute top-[-40px] left-[-12px]">
                     <img src="./assets/Vector.png" alt="">
                 </div>
@@ -158,7 +154,7 @@
         </div>
         <!-- How We Work Section -->
         <div class="bg-base-300 py-28 text-center">
-            <div class="max-w-[1140px] mx-auto">
+            <div class="max-w-[1140px] px-5 mx-auto">
                 <button class="btn bg-white text-lg font-bold rounded-full px-4 py-1"><i
                         class="fa-solid fa-arrow-right-long p-2"></i> How We Work</button>
                 <h3 class="font-extrabold text-[40px] mt-3">Our Works Process</h3>
@@ -192,7 +188,7 @@
         </div>
         <!-- Our Latest Portfolio Section -->
         <div class="py-28 text-center">
-            <div class="max-w-[1140px] mx-auto">
+            <div class="max-w-[1140px] px-5 mx-auto">
                 <button class="btn bg-interio-secondary text-lg font-bold rounded-full px-4 py-1"><i
                         class="fa-solid fa-arrow-right-long p-2"></i> Explore Our Latest Works</button>
                 <h3 class="font-extrabold text-[40px] mt-3">Our Latest Portfolio</h3>
@@ -260,7 +256,7 @@
         </div>
         <!-- extra section -->
         <div class="bg-base-300 pt-12 pb-4 text-center">
-            <div class="max-w-[1140px] mx-auto">
+            <div class="max-w-[1140px] px-5 mx-auto">
                 <button class="btn bg-interio-secondary text-lg font-bold rounded-full px-4 py-1"><i
                         class="fa-solid fa-arrow-right-long p-2"></i> Famous Works</button>
                 <h3 class="font-extrabold text-[40px] mt-3">Watch The Famous Ones</h3>
@@ -270,16 +266,13 @@
                 </p>
                 <div class="carousel w-full">
                     <div id="item1" class="carousel-item w-full">
-                        <img src="./assets/carousel-1.jpg"
-                            class="w-full rounded-lg max-h-[500px]" />
+                        <img src="./assets/carousel-1.jpg" class="w-full rounded-lg max-h-[500px]" />
                     </div>
                     <div id="item2" class="carousel-item w-full">
-                        <img src="./assets/carousel-2.jpg"
-                            class="w-full rounded-lg max-h-[500px]" />
+                        <img src="./assets/carousel-2.jpg" class="w-full rounded-lg max-h-[500px]" />
                     </div>
                     <div id="item3" class="carousel-item w-full">
-                        <img src="./assets/carousel-3.jpg"
-                            class="w-full rounded-lg max-h-[500px]" />
+                        <img src="./assets/carousel-3.jpg" class="w-full rounded-lg max-h-[500px]" />
                     </div>
                 </div>
                 <div class="flex w-full justify-center gap-2 py-2">
@@ -291,7 +284,7 @@
         </div>
         <!-- Let's Connect Section -->
         <div class="py-28 text-center bg-[url('./assets/bg.jpg')] bg-cover bg-center border-8 border-white">
-            <div class="max-w-[970px] mx-auto">
+            <div class="max-w-[970px] mx-auto px-5">
                 <button class="btn bg-interio-secondary text-lg font-bold rounded-full px-4 py-1"><i
                         class="fa-solid fa-arrow-right-long p-2"></i> Let's Connect</button>
                 <h3 class="font-extrabold text-[40px] mt-3">Let’s Discuss Next Project</h3>
