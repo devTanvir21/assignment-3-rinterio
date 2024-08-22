@@ -12,6 +12,8 @@
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome cdn -->
+    <script src="https://kit.fontawesome.com/43ba30917d.js" crossorigin="anonymous"></script>
 
 
     <style>
@@ -26,7 +28,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'bike-primary': '#E76F51',
+                        'interio-primary': '#abef5f',
+                        'interio-secondary' : 'rgba(171, 239, 95, 0.5)',
                     },
                 },
             },
@@ -35,8 +38,63 @@
 </head>
 
 <body>
-    <header>
-        <h3 class="text-5xl font-bold">Rinterio</h3>
+    <header class="md:container mx-auto">
+        <!-- NavBar -->
+        <nav>
+            <nav>
+                <div class="navbar justify-between bg-base-100">
+                    <div>
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <li><a>Home</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>News</a></li>
+                                <li><a>Contact</a></li>
+                            </ul>
+                        </div>
+                        <i class="fa-solid fa-arrow-right-long rotate-[-45deg]"></i>
+                        <a class="font-bold text-xl">Rinterio</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a class="btn bg-interio-primary rounded-full">Login <i
+                                class="fa-solid fa-arrow-right-long rotate-[-45deg]"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+        <!-- banner -->
+        <div class="banner">
+            <div class="text-center p-10">
+                <div>
+                    <div>
+                        <img src="./assets/banner.png" class="mx-auto" alt="">
+                    </div>
+                    <h1 class="text-6xl font-extrabold">A barn house of this design has a <br> striking appearance</h1>
+                    <p class="py-6">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                    </p>
+                    <button class="btn bg-interio-secondary rounded-full px-6">View Details <i class="fa-solid fa-arrow-right-long rotate-[-45deg] rounded-full bg-interio-primary ml-2 p-3"></i></button>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
 
